@@ -141,17 +141,20 @@ const Form = () => {
 function App() {
   // return <div className="App"></div>;
   return (
-    <div className="bg-blue-700 h-screen flex flex-col justify-center">
-      <div className="-my-24">
-      <img
-        className="py-12 filter grayscale mx-auto"
-        style={{
-          width: 240
-        }}
-        src={logo}
-        alt=""
-      />
-      <Form />
+    <div className="bg-blue-700 h-screen flex flex-col justify-center items-center text-white">
+      <div className="flex flex-col items-center">
+        <img
+          className="py-12 filter grayscale"
+          style={{
+            width: 240,
+          }}
+          src={logo}
+          alt=""
+        />
+        <Form />
+        <p className="text-sm w-96 text-center mt-8">
+        This page is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply 
+        </p>
       </div>
     </div>
   );
